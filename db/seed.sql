@@ -1,0 +1,12 @@
+-- Sample data for app_a401_expenses (optional for testing)
+-- This assumes a test user with known UUID exists. In production, data is created via the app.
+
+-- Example seed for a hypothetical test user (replace with actual test user UUID)
+-- INSERT INTO app_a401_expenses (user_id, category_id, amount, description, expense_date)
+-- SELECT
+--   'TEST_USER_UUID'::uuid,
+--   (SELECT id FROM app_a401_categories WHERE user_id = 'TEST_USER_UUID'::uuid AND name = 'Food & Dining' LIMIT 1),
+--   45.50,
+--   'Grocery shopping at Whole Foods',
+--   CURRENT_DATE - INTERVAL '5 days'
+-- WHERE EXISTS (SELECT 1 FROM auth.users WHERE id = 'TEST_USER_UUID'::uuid);
